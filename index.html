@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/css1/header-pc.css">
+    <link rel="stylesheet" href="./css/css1/header-sp.css">
+    <link rel="stylesheet" href="./css/css1/footer-pc.css">
+    <link rel="stylesheet" href="./css/css1/footer-sp.css">
+    <link rel="stylesheet" href="./css/css2/home-top-pc.css">
+    <link rel="stylesheet" href="./css/css2/home-top-sp.css">
+    <link rel="stylesheet" href="./css/css2/home-bottom-pc.css">
+    <link rel="stylesheet" href="./css/css2/home-bottom-sp.css">
+    <script src="./script/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $('a[href^="#"]').click(function(){
+                let speed = 500;
+                let href= $(this).attr("href");
+                let target = $(href == "#" || href == "" ? 'html' : href);
+                let position = target.offset().top;
+                $("html, body").animate({scrollTop:position}, speed, "swing");
+                return false;
+            });
+        });
+    </script>
+    <title>HOME</title>
+</head>
+<body>
+    <header>
+        <div class="sp-menu">
+            <input type="checkbox" id="menu-checkbox" class="checkbox-input">
+            <label for="menu-checkbox" class="menu-btn"><span></span></label>
+            <div class="sp-left-menu">
+                <div class="sp-left-menu-c">
+                    <a href="https://www.microsoft.com/microsoft-365/">Microsoft 365</a>
+                </div>
+                <div class="sp-left-menu-c">
+                    <a href="https://www.microsoft.com/microsoft-365/microsoft-office/">Office</a>
+                </div>
+                <div class="sp-left-menu-c">
+                    <a href="https://www.microsoft.com/windows/">Windows</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-left">
+            <div class="left-img">
+                <input type="checkbox" id="header-checkbox" class="checkbox-input">
+                <label for="header-checkbox" class="header-btn-1">
+                    <img class="logo" src="./img/img1/logo.png" width="187px" height="40px" alt="ms-logo">
+                </label>
+                <label for="header-checkbox" class="header-btn-2">
+                    <img class="logo" src="./img/img1/logo2.png" width="147px" height="40px" alt="ms-logo">
+                </label>
+                <div class="pc-header-2">
+                    <div class="header-2-logo">
+                        <a href="./home.html"><p>MC&nbsp;MILITARY</p></a>
+                    </div>
+                    <div class="header-2-menu">
+                        <a href="./ground-lineup.html">GROUND&nbsp;FORCE</a>
+                        <a href="./naval-lineup.html">NAVAL&nbsp;FORCE</a>
+                        <a href="./air-lineup.html">AIR&nbsp;FORCE</a>
+                    </div>
+                </div>
+                <div class="sp-header-2">
+                    <div class="sp-header-2-logo">
+                        <a href="./home.html"><p>MC&nbsp;MILITARY</p></a>
+                    </div>
+                    <div class="sp-header-2-c">
+                        <a href="./ground-lineup.html">GROUND&nbsp;FORCE</a>
+                    </div>
+                    <div class="sp-header-2-c">
+                        <a href="./naval-lineup.html">NAVAL&nbsp;FORCE</a>
+                    </div>
+                    <div class="sp-header-2-c">
+                        <a href="./air-lineup.html">AIR&nbsp;FORCE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pc-menu">
+                <div class="left-menu">
+                    <a href="https://www.microsoft.com/microsoft-365/">Microsoft 365</a>
+                    <a href="https://www.microsoft.com/microsoft-365/microsoft-office/">Office</a>
+                    <a href="https://www.microsoft.com/windows/">Windows</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-right">
+            <p>全ての Microsoft 製品</p>
+            <a href="https://www.microsoft.com/ja-jp/store/cart">
+                <img class="cart" src="./img/img1/cart.png" width="20" height="20" alt="cart-img">
+            </a>
+            <a href="https://www.microsoft.com/mscomhp/onerf/signin?EEL=True&pcexp=True&ru=https%3A%2F%2Fwww.microsoft.com%2Fja-jp%2F">
+                <img class="user" src="./img/img1/user.png" width="25" height="25" alt="user-icon">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="page-top">
+            <div class="top-video">
+                <video src="./video/video1.mp4" autoplay muted playsinline loop></video>
+            </div>
+            <div class="video-text">
+                <p class="video-text1">自分だけの戦力をつくる</p>
+                <p class="video-text2">MC&nbsp;MILITARY</p>
+                <a href="#lineup">
+                    <p class="video-text3">作品を見る</p>
+                </a>
+            </div>
+            <div class="video-btn">
+                <a href="#lineup">
+                    <p class="video-text4">▼</p>
+                </a>
+            </div>
+        </div>
+        <div class="page-bottom" id="lineup">
+            <div class="lineup">
+                <div class="lineup-c">
+                    <a href="./ground-lineup.html" id="lineup-1" class="lineup-link">
+                        <p class="main-title">GROUND FORCE</p>
+                        <p class="sub-title">陸軍</p>
+                        <img class="img-1" src="./img/img4/scutum/img10.jpg">
+                    </a>
+                </div>
+                <div class="lineup-c">
+                    <a href="./naval-lineup.html" id="lineup-2" class="lineup-link">
+                        <p class="main-title">NAVAL FORCE</p>
+                        <p class="sub-title">海軍</p>
+                        <img class="img-1" src="./img/img4/alvarodebazan/img5.jpg">
+                    </a>
+                </div>
+                <div class="lineup-c">
+                    <a href="./air-lineup.html" id="lineup-3" class="lineup-link">
+                        <p class="main-title">AIR FORCE</p>
+                        <p class="sub-title">空軍</p>
+                        <img class="img-1" src="./img/img4/tonnerre/img3.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-menu">
+                <ul>
+                    <h3>最新情報</h3>
+                    <li><a href="https://www.microsoft.com/ja-jp/p/surface-laptop-go/94FC0BDGQ7WV">Surface&nbsp;Laptop&nbsp;Go</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/p/surface-pro-x/8QG3BMRHNWHK">Surface&nbsp;Pro&nbsp;X</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/p/surface-go-2/8PT3S2VJMDR6">Surface&nbsp;Go&nbsp;2</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <h3>Microsoft&nbsp;Store</h3>
+                    <li><a href="https://account.microsoft.com/">アカウント&nbsp;プロファイル</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/download">Microsoft&nbsp;Store&nbsp;サポート</a></li>
+                    <li><a href="https://go.microsoft.com/fwlink/?linkid=2139749">返品・返金</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <h3>教育</h3>
+                    <li><a href="https://www.microsoft.com/ja-jp/education">教育機関向けの&nbsp;Microsoft&nbsp;製品</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/education/products/office/default.aspx">学生向け&nbsp;Office</a></li>
+                    <li><a href="https://products.office.com/ja-jp/academic/compare-office-365-education-plans">Office&nbsp;365&nbsp;の教育機関向け製品</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="https://support.microsoft.com/ja-jp/contactus"><p>Microsoft&nbsp;に問い合わせ</p></a>
+            <a href="https://go.microsoft.com/fwlink/?LinkId=521839"><p>プライバシー</p></a>
+            <a href="https://go.microsoft.com/fwlink/?LinkID=206977"><p>使用条件</p></a>
+        </div>
+    </footer>
+</body>
+</html>
