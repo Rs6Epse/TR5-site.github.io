@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/css1/header-pc.css">
+    <link rel="stylesheet" href="./css/css1/header-sp.css">
+    <link rel="stylesheet" href="./css/css1/footer-pc.css">
+    <link rel="stylesheet" href="./css/css1/footer-sp.css">
+    <link rel="stylesheet" href="./css/css4/shooter/shooter-pc.css">
+    <link rel="stylesheet" href="./css/css4/shooter/shooter-sp.css">
+    <link rel="stylesheet" href="./css/flickity/gallery.css">
+    <script src="./script/flickity.pkgd.js"></script>
+    <script src="./script/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $('a[href^="#"]').click(function(){
+                let speed = 500;
+                let href= $(this).attr("href");
+                let target = $(href == "#" || href == "" ? 'html' : href);
+                let position = target.offset().top;
+                $("html, body").animate({scrollTop:position}, speed, "swing");
+                return false;
+            });
+        });
+    </script>
+    <title>Shooter</title>
+</head>
+<body>
+    <header>
+        <div class="sp-menu">
+            <input type="checkbox" id="menu-checkbox" class="checkbox-input">
+            <label for="menu-checkbox" class="menu-btn"><span></span></label>
+            <div class="sp-left-menu">
+                <div class="sp-left-menu-c">
+                    <a href="https://www.microsoft.com/microsoft-365/">Microsoft 365</a>
+                </div>
+                <div class="sp-left-menu-c">
+                    <a href="https://www.microsoft.com/microsoft-365/microsoft-office/">Office</a>
+                </div>
+                <div class="sp-left-menu-c">
+                    <a href="https://www.microsoft.com/windows/">Windows</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-left">
+            <div class="left-img">
+                <input type="checkbox" id="header-checkbox" class="checkbox-input">
+                <label for="header-checkbox" class="header-btn-1">
+                    <img class="logo" src="./img/img1/logo.png" width="187px" height="40px" alt="ms-logo">
+                </label>
+                <label for="header-checkbox" class="header-btn-2">
+                    <img class="logo" src="./img/img1/logo2.png" width="147px" height="40px" alt="ms-logo">
+                </label>
+                <div class="pc-header-2">
+                    <div class="header-2-logo">
+                        <a href="./index.html"><p>MC MILITARY</p></a>
+                    </div>
+                    <div class="header-2-menu">
+                        <a href="./ground-lineup.html">GROUND FORCE</a>
+                        <a href="./naval-lineup.html">NAVAL FORCE</a>
+                        <a href="./air-lineup.html">AIR FORCE</a>
+                    </div>
+                </div>
+                <div class="sp-header-2">
+                    <div class="sp-header-2-logo">
+                        <a href="./index.html"><p>MC MILITARY</p></a>
+                    </div>
+                    <div class="sp-header-2-c">
+                        <a href="./ground-lineup.html">GROUND FORCE</a>
+                    </div>
+                    <div class="sp-header-2-c">
+                        <a href="./naval-lineup.html">NAVAL FORCE</a>
+                    </div>
+                    <div class="sp-header-2-c">
+                        <a href="./air-lineup.html">AIR FORCE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pc-menu">
+                <div class="left-menu">
+                    <a href="https://www.microsoft.com/microsoft-365/">Microsoft 365</a>
+                    <a href="https://www.microsoft.com/microsoft-365/microsoft-office/">Office</a>
+                    <a href="https://www.microsoft.com/windows/">Windows</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-right">
+            <p>全ての Microsoft 製品</p>
+            <a href="https://www.microsoft.com/ja-jp/store/cart">
+                <img class="cart" src="./img/img1/cart.png" width="20" height="20" alt="cart-img">
+            </a>
+            <a href="https://www.microsoft.com/mscomhp/onerf/signin?EEL=True&pcexp=True&ru=https%3A%2F%2Fwww.microsoft.com%2Fja-jp%2F">
+                <img class="user" src="./img/img1/user.png" width="25" height="25" alt="user-icon">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="top-img">
+            <img src="./img/img4/shooter/img2.jpg">
+            <a href="#content">
+                <p>▼</p>
+            </a>
+        </div>
+        <div class="content" id="content">
+            <div class="page-path">
+                <a href="./index.html">
+                    <p class="page-path1">HOME</p>
+                </a>
+                <div class="ppsp">
+                    <p class="page-path2">></p>
+                    <a href="./ground-lineup.html">
+                        <p class="page-path1">GROUND FORCE</p>
+                    </a>
+                </div>
+                <p class="page-path2">></p>
+                <p class="page-path3">Shooter</p>
+                </a>
+            </div>
+            <div class="content-1">
+                <p class="title-t">Shooter</p>
+                <hr size="1px" color="#000">
+                <p class="overview-t">シューターはソビエト連邦が開発した「2K22 ツングースカ」がモデルの自走式防空システム。<br>
+                    機関砲とミサイルを組み合わせて運用することで、敵機との距離を問わず効率的に打撃を与えられる。
+                </p>
+            </div>
+            <div class="content-2">
+                <div class="gallery">
+                    <div><img src="./img/img4/shooter/img1.jpg"></div>
+                    <div><img src="./img/img4/shooter/img2.jpg"></div>
+                    <div><img src="./img/img4/shooter/img3.jpg"></div>
+                </div>
+                <script>
+                    var flickitySyncer = [];
+                    var elms = document.getElementsByClassName( "gallery" ) ;
+                    for( var i=0,l=elms.length; l>i; i++ )
+                    {
+                        flickitySyncer[i] = new Flickity( elms[i] , {
+                            contain: true,
+                            wrapAround: true
+                        } ) ;
+                    }
+                </script>
+            </div>
+            <div class="content-bottom">
+                <div class="content-bottom-menu">
+                    <div class="content-bottom-menu-img">
+                        <a href="./ground-lineup.html" id="lineup-1">
+                            <p>GROUND FORCE</p>
+                            <img src="./img/img4/scutum/img10.jpg">
+                        </a>
+                    </div>
+                    <div class="content-bottom-menu-img" id="lineup-2">
+                        <a href="./naval-lineup.html">
+                            <p>NAVAL FORCE</p>
+                            <img src="./img/img4/alvarodebazan/img5.jpg">
+                        </a>
+                    </div>
+                    <div class="content-bottom-menu-img" id="lineup-3">
+                        <a href="./air-lineup.html">
+                            <p>AIR FORCE</p>
+                            <img src="./img/img4/tonnerre/img3.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-menu">
+                <ul>
+                    <h3>最新情報</h3>
+                    <li><a href="https://www.microsoft.com/ja-jp/p/surface-laptop-go/94FC0BDGQ7WV">Surface Laptop Go</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/p/surface-pro-x/8QG3BMRHNWHK">Surface Pro X</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/p/surface-go-2/8PT3S2VJMDR6">Surface Go 2</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <h3>Microsoft Store</h3>
+                    <li><a href="https://account.microsoft.com/">アカウント プロファイル</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/download">Microsoft Store サポート</a></li>
+                    <li><a href="https://go.microsoft.com/fwlink/?linkid=2139749">返品・返金</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <h3>教育</h3>
+                    <li><a href="https://www.microsoft.com/ja-jp/education">教育機関向けの Microsoft 製品</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/education/products/office/default.aspx">学生向け Office</a></li>
+                    <li><a href="https://products.office.com/ja-jp/academic/compare-office-365-education-plans">Office 365 の教育機関向け製品</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="https://support.microsoft.com/ja-jp/contactus"><p>Microsoft に問い合わせ</p></a>
+            <a href="https://go.microsoft.com/fwlink/?LinkId=521839"><p>プライバシー</p></a>
+            <a href="https://go.microsoft.com/fwlink/?LinkID=206977"><p>使用条件</p></a>
+        </div>
+    </footer>
+    <script>console.log("none");</script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/css1/header-pc.css">
+    <link rel="stylesheet" href="./css/css1/header-sp.css">
+    <link rel="stylesheet" href="./css/css1/footer-pc.css">
+    <link rel="stylesheet" href="./css/css1/footer-sp.css">
+    <link rel="stylesheet" href="./css/css4/alvarodebazan/alvarodebazan-pc.css">
+    <link rel="stylesheet" href="./css/css4/alvarodebazan/alvarodebazan-sp.css">
+    <link rel="stylesheet" href="./css/flickity/gallery.css">
+    <script src="./script/flickity.pkgd.js"></script>
+    <script src="./script/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $('a[href^="#"]').click(function(){
+                let speed = 500;
+                let href= $(this).attr("href");
+                let target = $(href == "#" || href == "" ? 'html' : href);
+                let position = target.offset().top;
+                $("html, body").animate({scrollTop:position}, speed, "swing");
+                return false;
+            });
+        });
+    </script>
+    <title>Álvaro de Bazán</title>
+</head>
+<body>
+    <header>
+        <div class="sp-menu">
+            <input type="checkbox" id="menu-checkbox" class="checkbox-input">
+            <label for="menu-checkbox" class="menu-btn"><span></span></label>
+            <div class="sp-left-menu">
+                <div class="sp-left-menu-c">
+                    <a href="https://www.microsoft.com/microsoft-365/">Microsoft 365</a>
+                </div>
+                <div class="sp-left-menu-c">
+                    <a href="https://www.microsoft.com/microsoft-365/microsoft-office/">Office</a>
+                </div>
+                <div class="sp-left-menu-c">
+                    <a href="https://www.microsoft.com/windows/">Windows</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-left">
+            <div class="left-img">
+                <input type="checkbox" id="header-checkbox" class="checkbox-input">
+                <label for="header-checkbox" class="header-btn-1">
+                    <img class="logo" src="./img/img1/logo.png" width="187px" height="40px" alt="ms-logo">
+                </label>
+                <label for="header-checkbox" class="header-btn-2">
+                    <img class="logo" src="./img/img1/logo2.png" width="147px" height="40px" alt="ms-logo">
+                </label>
+                <div class="pc-header-2">
+                    <div class="header-2-logo">
+                        <a href="./index.html"><p>MC MILITARY</p></a>
+                    </div>
+                    <div class="header-2-menu">
+                        <a href="./ground-lineup.html">GROUND FORCE</a>
+                        <a href="./naval-lineup.html">NAVAL FORCE</a>
+                        <a href="./air-lineup.html">AIR FORCE</a>
+                    </div>
+                </div>
+                <div class="sp-header-2">
+                    <div class="sp-header-2-logo">
+                        <a href="./index.html"><p>MC MILITARY</p></a>
+                    </div>
+                    <div class="sp-header-2-c">
+                        <a href="./ground-lineup.html">GROUND FORCE</a>
+                    </div>
+                    <div class="sp-header-2-c">
+                        <a href="./naval-lineup.html">NAVAL FORCE</a>
+                    </div>
+                    <div class="sp-header-2-c">
+                        <a href="./air-lineup.html">AIR FORCE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pc-menu">
+                <div class="left-menu">
+                    <a href="https://www.microsoft.com/microsoft-365/">Microsoft 365</a>
+                    <a href="https://www.microsoft.com/microsoft-365/microsoft-office/">Office</a>
+                    <a href="https://www.microsoft.com/windows/">Windows</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-right">
+            <p>全ての Microsoft 製品</p>
+            <a href="https://www.microsoft.com/ja-jp/store/cart">
+                <img class="cart" src="./img/img1/cart.png" width="20" height="20" alt="cart-img">
+            </a>
+            <a href="https://www.microsoft.com/mscomhp/onerf/signin?EEL=True&pcexp=True&ru=https%3A%2F%2Fwww.microsoft.com%2Fja-jp%2F">
+                <img class="user" src="./img/img1/user.png" width="25" height="25" alt="user-icon">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="top-img">
+            <img src="./img/img4/alvarodebazan/img5.jpg">
+            <a href="#content">
+                <p>▼</p>
+            </a>
+        </div>
+        <div class="content" id="content">
+            <div class="page-path">
+                <a href="./index.html">
+                    <p class="page-path1">HOME</p>
+                </a>
+                <div class="ppsp">
+                    <p class="page-path2">></p>
+                    <a href="./naval-lineup.html">
+                        <p class="page-path1">NAVAL FORCE</p>
+                    </a>
+                </div>
+                <p class="page-path2">></p>
+                <p class="page-path3">Álvaro de Bazán</p>
+                </a>
+            </div>
+            <div class="content-1">
+                <p class="title-t">Álvaro de Bazán</p>
+                <hr size="1px" color="#000">
+                <p class="overview-t">アルバロ・デ・バサン級はスペイン海軍が保有するフリゲート艦。<br>
+                    欧州初のイージスシステム搭載艦であり高い防空能力を有するが、船体が小型なため兵装搭載量は若干少ない。<br>
+                    オーストラリアのホバート級やノルウェーのフリチョフ・ナンセン級といった他のイージス艦の原型にもなった。
+                </p>
+            </div>
+            <div class="content-2">
+                <div class="gallery">
+                    <div><img src="./img/img4/alvarodebazan/img1.jpg"></div>
+                    <div><img src="./img/img4/alvarodebazan/img2.jpg"></div>
+                    <div><img src="./img/img4/alvarodebazan/img3.jpg"></div>
+                    <div><img src="./img/img4/alvarodebazan/img4.jpg"></div>
+                    <div><img src="./img/img4/alvarodebazan/img5.jpg"></div>
+                    <div><img src="./img/img4/alvarodebazan/img6.jpg"></div>
+                    <div><img src="./img/img4/alvarodebazan/img7.jpg"></div>
+                </div>
+                <script>
+                    var flickitySyncer = [];
+                    var elms = document.getElementsByClassName( "gallery" ) ;
+                    for( var i=0,l=elms.length; l>i; i++ )
+                    {
+                        flickitySyncer[i] = new Flickity( elms[i] , {
+                            contain: true,
+                            wrapAround: true
+                        } ) ;
+                    }
+                </script>
+            </div>
+            <div class="content-3">
+                <img src="./img/img4/alvarodebazan/img8.jpg">
+            </div>
+            <div class="content-4">
+                <p class="title">より自然な造形を</p>
+                <hr size="1px" color="#ececec">
+                <p class="overview">本級を作成するにあたって一番重要視したのはステルス艦らしさだ。<br>
+                    最近の艦艇はレーダーに探知される可能性を下げるため傾斜をつけた平面で構成されていることが多いが、<br class="brsp">
+                     Minecraft では基本的に立方体しか扱うことができないため再現が難しい。<br>
+                    アーレイバーク級を作成した際にも同様の問題に直面したが、当時は技術が足りずうまく作ることができなかった。
+                </p>
+                <img src="./img/img4/alvarodebazan/img9.jpg">
+                <p class="overview2">左が前作、右が今作。<br>
+                    船体や上部構造物がより滑らかでボリューミーな形状になっている。<br>
+                    シンプルな造形で済ませつつ各所の寸法を細かく管理してちぐはぐ感を抑え、美しい傾斜を実現した。
+                </p>
+            </div>
+            <div class="content-bottom">
+                <div class="content-bottom-menu">
+                    <div class="content-bottom-menu-img">
+                        <a href="./ground-lineup.html" id="lineup-1">
+                            <p>GROUND FORCE</p>
+                            <img src="./img/img4/scutum/img10.jpg">
+                        </a>
+                    </div>
+                    <div class="content-bottom-menu-img" id="lineup-2">
+                        <a href="./naval-lineup.html">
+                            <p>NAVAL FORCE</p>
+                            <img src="./img/img4/alvarodebazan/img5.jpg">
+                        </a>
+                    </div>
+                    <div class="content-bottom-menu-img" id="lineup-3">
+                        <a href="./air-lineup.html">
+                            <p>AIR FORCE</p>
+                            <img src="./img/img4/tonnerre/img3.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-menu">
+                <ul>
+                    <h3>最新情報</h3>
+                    <li><a href="https://www.microsoft.com/ja-jp/p/surface-laptop-go/94FC0BDGQ7WV">Surface Laptop Go</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/p/surface-pro-x/8QG3BMRHNWHK">Surface Pro X</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/p/surface-go-2/8PT3S2VJMDR6">Surface Go 2</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <h3>Microsoft Store</h3>
+                    <li><a href="https://account.microsoft.com/">アカウント プロファイル</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/download">Microsoft Store サポート</a></li>
+                    <li><a href="https://go.microsoft.com/fwlink/?linkid=2139749">返品・返金</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <h3>教育</h3>
+                    <li><a href="https://www.microsoft.com/ja-jp/education">教育機関向けの Microsoft 製品</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/education/products/office/default.aspx">学生向け Office</a></li>
+                    <li><a href="https://products.office.com/ja-jp/academic/compare-office-365-education-plans">Office 365 の教育機関向け製品</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="https://support.microsoft.com/ja-jp/contactus"><p>Microsoft に問い合わせ</p></a>
+            <a href="https://go.microsoft.com/fwlink/?LinkId=521839"><p>プライバシー</p></a>
+            <a href="https://go.microsoft.com/fwlink/?LinkID=206977"><p>使用条件</p></a>
+        </div>
+    </footer>
+    <script>console.log("none");</script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/css1/header-pc.css">
+    <link rel="stylesheet" href="./css/css1/header-sp.css">
+    <link rel="stylesheet" href="./css/css1/footer-pc.css">
+    <link rel="stylesheet" href="./css/css1/footer-sp.css">
+    <link rel="stylesheet" href="./css/css4/scutum/scutum-pc.css">
+    <link rel="stylesheet" href="./css/css4/scutum/scutum-sp.css">
+    <link rel="stylesheet" href="./css/flickity/gallery.css">
+    <script src="./script/flickity.pkgd.js"></script>
+    <script src="./script/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $('a[href^="#"]').click(function(){
+                let speed = 500;
+                let href= $(this).attr("href");
+                let target = $(href == "#" || href == "" ? 'html' : href);
+                let position = target.offset().top;
+                $("html, body").animate({scrollTop:position}, speed, "swing");
+                return false;
+            });
+        });
+    </script>
+    <title>Scutum 1A</title>
+</head>
+<body>
+    <header>
+        <div class="sp-menu">
+            <input type="checkbox" id="menu-checkbox" class="checkbox-input">
+            <label for="menu-checkbox" class="menu-btn"><span></span></label>
+            <div class="sp-left-menu">
+                <div class="sp-left-menu-c">
+                    <a href="https://www.microsoft.com/microsoft-365/">Microsoft 365</a>
+                </div>
+                <div class="sp-left-menu-c">
+                    <a href="https://www.microsoft.com/microsoft-365/microsoft-office/">Office</a>
+                </div>
+                <div class="sp-left-menu-c">
+                    <a href="https://www.microsoft.com/windows/">Windows</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-left">
+            <div class="left-img">
+                <input type="checkbox" id="header-checkbox" class="checkbox-input">
+                <label for="header-checkbox" class="header-btn-1">
+                    <img class="logo" src="./img/img1/logo.png" width="187px" height="40px" alt="ms-logo">
+                </label>
+                <label for="header-checkbox" class="header-btn-2">
+                    <img class="logo" src="./img/img1/logo2.png" width="147px" height="40px" alt="ms-logo">
+                </label>
+                <div class="pc-header-2">
+                    <div class="header-2-logo">
+                        <a href="./index.html"><p>MC MILITARY</p></a>
+                    </div>
+                    <div class="header-2-menu">
+                        <a href="./ground-lineup.html">GROUND FORCE</a>
+                        <a href="./naval-lineup.html">NAVAL FORCE</a>
+                        <a href="./air-lineup.html">AIR FORCE</a>
+                    </div>
+                </div>
+                <div class="sp-header-2">
+                    <div class="sp-header-2-logo">
+                        <a href="./index.html"><p>MC MILITARY</p></a>
+                    </div>
+                    <div class="sp-header-2-c">
+                        <a href="./ground-lineup.html">GROUND FORCE</a>
+                    </div>
+                    <div class="sp-header-2-c">
+                        <a href="./naval-lineup.html">NAVAL FORCE</a>
+                    </div>
+                    <div class="sp-header-2-c">
+                        <a href="./air-lineup.html">AIR FORCE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pc-menu">
+                <div class="left-menu">
+                    <a href="https://www.microsoft.com/microsoft-365/">Microsoft 365</a>
+                    <a href="https://www.microsoft.com/microsoft-365/microsoft-office/">Office</a>
+                    <a href="https://www.microsoft.com/windows/">Windows</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-right">
+            <p>全ての Microsoft 製品</p>
+            <a href="https://www.microsoft.com/ja-jp/store/cart">
+                <img class="cart" src="./img/img1/cart.png" width="20" height="20" alt="cart-img">
+            </a>
+            <a href="https://www.microsoft.com/mscomhp/onerf/signin?EEL=True&pcexp=True&ru=https%3A%2F%2Fwww.microsoft.com%2Fja-jp%2F">
+                <img class="user" src="./img/img1/user.png" width="25" height="25" alt="user-icon">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="top-img">
+            <img src="./img/img4/scutum/img3.jpg">
+            <a href="#content">
+                <p>▼</p>
+            </a>
+        </div>
+        <div class="content" id="content">
+            <div class="page-path">
+                <a href="./index.html">
+                    <p class="page-path1">HOME</p>
+                </a>
+                <div class="ppsp">
+                    <p class="page-path2">></p>
+                    <a href="./ground-lineup.html">
+                        <p class="page-path1">GROUND FORCE</p>
+                    </a>
+                </div>
+                <p class="page-path2">></p>
+                <p class="page-path3">Scutum 1A</p>
+                </a>
+            </div>
+            <div class="content-1">
+                <p class="title-t">Scutum 1A</p>
+                <hr size="1px" color="#000">
+                <p class="overview-t">スクータム 1 はフランスが開発した「AMX-56 ルクレール」がモデルの主力戦車。<br>
+                    TNT キャノンやその砲撃に耐えるためのシステムを組み込んでおり、実際に戦うことができる。
+                </p>
+            </div>
+            <div class="content-2">
+                <div class="gallery">
+                    <div><img src="./img/img4/scutum/img1.jpg"></div>
+                    <div><img src="./img/img4/scutum/img2.jpg"></div>
+                    <div><img src="./img/img4/scutum/img3.jpg"></div>
+                    <div><img src="./img/img4/scutum/img4.jpg"></div>
+                    <div><img src="./img/img4/scutum/img5.jpg"></div>
+                    <div><img src="./img/img4/scutum/img6.jpg"></div>
+                </div>
+                <script>
+                    var flickitySyncer = [];
+                    var elms = document.getElementsByClassName( "gallery" ) ;
+                    for( var i=0,l=elms.length; l>i; i++ )
+                    {
+                        flickitySyncer[i] = new Flickity( elms[i] , {
+                            contain: true,
+                            wrapAround: true
+                        } ) ;
+                    }
+                </script>
+            </div>
+            <div class="content-3">
+                <img src="./img/img4/scutum/img7.jpg">
+            </div>
+            <div class="content-4">
+                <p class="title">機能面でも戦車らしさを</p>
+                <hr size="1px" color="#fff">
+                <p class="overview">戦車なら撃ってナンボ、撃たれてナンボである。<br>
+                    これを MOD やコマンドを使うことなく実現したのが Scutum だ。<br>
+                    随所にレッドストーン回路を使用していることから「回路戦車」と呼ぶことも多い。
+                </p>
+                <div class="tiles">
+                    <div class="tile-1">
+                        <div class="tile-c">
+                            <img src="./img/img4/scutum/img8.jpg">
+                        </div>
+                        <div class="tile-c">
+                            <p class="title-c">優れた防弾性能</p>
+                            <p class="overview-c">これは頭から水を被った戦車だ。初めて見た方は面食らうかもしれない。<br>
+                                Minecraft の水には爆風を無力化する特性があり、<br class="brsp">
+                                これを利用することで TNT キャノンなどへの耐性が格段にアップする。<br>
+                                例えるなら一種のシールドのようなものだ。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tile-2">
+                        <div class="tile-c">
+                            <img src="./img/img4/scutum/img9.jpg">
+                        </div>
+                        <div class="tile-c">
+                            <p class="title-c">対戦車専用装備</p>
+                            <p class="overview-c">搭載する TNT キャノンは自身のような「回路戦車」への攻撃に特化した専用設計。<br>
+                                先述した水のシールドを貫通できる「耐水弾」や、<br class="brsp">
+                                装甲が薄い天板を直接狙える「トップアタック弾」等の特殊な砲弾が発射できる。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-bottom">
+                <div class="content-bottom-menu">
+                    <div class="content-bottom-menu-img">
+                        <a href="./ground-lineup.html" id="lineup-1">
+                            <p>GROUND FORCE</p>
+                            <img src="./img/img4/scutum/img10.jpg">
+                        </a>
+                    </div>
+                    <div class="content-bottom-menu-img" id="lineup-2">
+                        <a href="./naval-lineup.html">
+                            <p>NAVAL FORCE</p>
+                            <img src="./img/img4/alvarodebazan/img5.jpg">
+                        </a>
+                    </div>
+                    <div class="content-bottom-menu-img" id="lineup-3">
+                        <a href="./air-lineup.html">
+                            <p>AIR FORCE</p>
+                            <img src="./img/img4/tonnerre/img3.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-menu">
+                <ul>
+                    <h3>最新情報</h3>
+                    <li><a href="https://www.microsoft.com/ja-jp/p/surface-laptop-go/94FC0BDGQ7WV">Surface Laptop Go</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/p/surface-pro-x/8QG3BMRHNWHK">Surface Pro X</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/p/surface-go-2/8PT3S2VJMDR6">Surface Go 2</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <h3>Microsoft Store</h3>
+                    <li><a href="https://account.microsoft.com/">アカウント プロファイル</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/download">Microsoft Store サポート</a></li>
+                    <li><a href="https://go.microsoft.com/fwlink/?linkid=2139749">返品・返金</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <h3>教育</h3>
+                    <li><a href="https://www.microsoft.com/ja-jp/education">教育機関向けの Microsoft 製品</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/education/products/office/default.aspx">学生向け Office</a></li>
+                    <li><a href="https://products.office.com/ja-jp/academic/compare-office-365-education-plans">Office 365 の教育機関向け製品</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="https://support.microsoft.com/ja-jp/contactus"><p>Microsoft に問い合わせ</p></a>
+            <a href="https://go.microsoft.com/fwlink/?LinkId=521839"><p>プライバシー</p></a>
+            <a href="https://go.microsoft.com/fwlink/?LinkID=206977"><p>使用条件</p></a>
+        </div>
+    </footer>
+    <script>console.log("none");</script>
+</body>
+</html>

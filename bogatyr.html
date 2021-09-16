@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/css1/header-pc.css">
+    <link rel="stylesheet" href="./css/css1/header-sp.css">
+    <link rel="stylesheet" href="./css/css1/footer-pc.css">
+    <link rel="stylesheet" href="./css/css1/footer-sp.css">
+    <link rel="stylesheet" href="./css/css4/bogatyr/bogatyr-pc.css">
+    <link rel="stylesheet" href="./css/css4/bogatyr/bogatyr-sp.css">
+    <link rel="stylesheet" href="./css/flickity/gallery.css">
+    <script src="./script/flickity.pkgd.js"></script>
+    <script src="./script/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $('a[href^="#"]').click(function(){
+                let speed = 500;
+                let href= $(this).attr("href");
+                let target = $(href == "#" || href == "" ? 'html' : href);
+                let position = target.offset().top;
+                $("html, body").animate({scrollTop:position}, speed, "swing");
+                return false;
+            });
+        });
+    </script>
+    <title>Bogatyr</title>
+</head>
+<body>
+    <header>
+        <div class="sp-menu">
+            <input type="checkbox" id="menu-checkbox" class="checkbox-input">
+            <label for="menu-checkbox" class="menu-btn"><span></span></label>
+            <div class="sp-left-menu">
+                <div class="sp-left-menu-c">
+                    <a href="https://www.microsoft.com/microsoft-365/">Microsoft 365</a>
+                </div>
+                <div class="sp-left-menu-c">
+                    <a href="https://www.microsoft.com/microsoft-365/microsoft-office/">Office</a>
+                </div>
+                <div class="sp-left-menu-c">
+                    <a href="https://www.microsoft.com/windows/">Windows</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-left">
+            <div class="left-img">
+                <input type="checkbox" id="header-checkbox" class="checkbox-input">
+                <label for="header-checkbox" class="header-btn-1">
+                    <img class="logo" src="./img/img1/logo.png" width="187px" height="40px" alt="ms-logo">
+                </label>
+                <label for="header-checkbox" class="header-btn-2">
+                    <img class="logo" src="./img/img1/logo2.png" width="147px" height="40px" alt="ms-logo">
+                </label>
+                <div class="pc-header-2">
+                    <div class="header-2-logo">
+                        <a href="./index.html"><p>MC MILITARY</p></a>
+                    </div>
+                    <div class="header-2-menu">
+                        <a href="./ground-lineup.html">GROUND FORCE</a>
+                        <a href="./naval-lineup.html">NAVAL FORCE</a>
+                        <a href="./air-lineup.html">AIR FORCE</a>
+                    </div>
+                </div>
+                <div class="sp-header-2">
+                    <div class="sp-header-2-logo">
+                        <a href="./index.html"><p>MC MILITARY</p></a>
+                    </div>
+                    <div class="sp-header-2-c">
+                        <a href="./ground-lineup.html">GROUND FORCE</a>
+                    </div>
+                    <div class="sp-header-2-c">
+                        <a href="./naval-lineup.html">NAVAL FORCE</a>
+                    </div>
+                    <div class="sp-header-2-c">
+                        <a href="./air-lineup.html">AIR FORCE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pc-menu">
+                <div class="left-menu">
+                    <a href="https://www.microsoft.com/microsoft-365/">Microsoft 365</a>
+                    <a href="https://www.microsoft.com/microsoft-365/microsoft-office/">Office</a>
+                    <a href="https://www.microsoft.com/windows/">Windows</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-right">
+            <p>全ての Microsoft 製品</p>
+            <a href="https://www.microsoft.com/ja-jp/store/cart">
+                <img class="cart" src="./img/img1/cart.png" width="20" height="20" alt="cart-img">
+            </a>
+            <a href="https://www.microsoft.com/mscomhp/onerf/signin?EEL=True&pcexp=True&ru=https%3A%2F%2Fwww.microsoft.com%2Fja-jp%2F">
+                <img class="user" src="./img/img1/user.png" width="25" height="25" alt="user-icon">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="top-img">
+            <img src="./img/img4/bogatyr/img3.jpg">
+            <a href="#content">
+                <p>▼</p>
+            </a>
+        </div>
+        <div class="content" id="content">
+            <div class="page-path">
+                <a href="./index.html">
+                    <p class="page-path1">HOME</p>
+                </a>
+                <div class="ppsp">
+                    <p class="page-path2">></p>
+                    <a href="./naval-lineup.html">
+                        <p class="page-path1">NAVAL FORCE</p>
+                    </a>
+                </div>
+                <p class="page-path2">></p>
+                <p class="page-path3">Bogatyr</p>
+                </a>
+            </div>
+            <div class="content-1">
+                <p class="title-t">Bogatyr</p>
+                <hr size="1px" color="#000">
+                <p class="overview-t">ボガトィーリ級は 1930 年代にソビエト連邦が計画した「ウラジオストク級」がモデルの戦艦。<br>
+                    TNT キャノンやそれに耐えるための装甲を随所に組み込んでおり、実際に戦うことができる。
+                </p>
+            </div>
+            <div class="content-2">
+                <div class="gallery">
+                    <div><img src="./img/img4/bogatyr/img1.jpg"></div>
+                    <div><img src="./img/img4/bogatyr/img2.jpg"></div>
+                    <div><img src="./img/img4/bogatyr/img3.jpg"></div>
+                    <div><img src="./img/img4/bogatyr/img4.jpg"></div>
+                    <div><img src="./img/img4/bogatyr/img5.jpg"></div>
+                    <div><img src="./img/img4/bogatyr/img6.jpg"></div>
+                    <div><img src="./img/img4/bogatyr/img7.jpg"></div>
+                </div>
+                <script>
+                    var flickitySyncer = [];
+                    var elms = document.getElementsByClassName( "gallery" ) ;
+                    for( var i=0,l=elms.length; l>i; i++ )
+                    {
+                        flickitySyncer[i] = new Flickity( elms[i] , {
+                            contain: true,
+                            wrapAround: true
+                        } ) ;
+                    }
+                </script>
+            </div>
+            <div class="content-3">
+                <img src="./img/img4/bogatyr/img8.jpg">
+            </div>
+            <div class="content-4">
+                <p class="title">強力かつ先進的</p>
+                <hr size="1px" color="#fff">
+                <p class="overview">自身が持つ全ての技術を投入した、一種の集大成ともいえる艦艇が Bogatyr だ。<br>
+                    見た目、火力、防御力。<br>
+                    Minecraft ではトレードオフな関係とされる三つの要素をバランスよく纏め上げることに成功している。
+                </p>
+                <div class="tiles">
+                    <div class="tile-1">
+                        <div class="tile-c">
+                            <img src="./img/img4/bogatyr/img9.jpg">
+                        </div>
+                        <div class="tile-c">
+                            <p class="title-c">高火力、高耐久</p>
+                            <p class="overview-c">戦艦のシンボルともいえる大型砲塔。<br>
+                                金床と水を使用した装甲によって TNT の爆風をシャットアウトできるほか、<br class="brsp">
+                                内部に組み込まれた砲は合計 1200 個の TNT を撃ち出す能力を持つ。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tile-2">
+                        <div class="tile-c">
+                            <img src="./img/img4/bogatyr/img10.jpg">
+                        </div>
+                        <div class="tile-c">
+                            <p class="title-c">時代はワイヤレス</p>
+                            <p class="overview-c">全ての主砲は船体中央に設置した装置によって一括操作が可能だ。<br>
+                                装置間の通信には TNT キャノンを応用した無線通信技術を使用しており、<br class="brsp">
+                                建造時間や占有空間の削減、混線防止などといった効果が期待される。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tile-1">
+                        <div class="tile-c">
+                            <img src="./img/img4/bogatyr/img11.jpg">
+                        </div>
+                        <div class="tile-c">
+                            <p class="title-c">証明された強さ</p>
+                            <p class="overview-c">本級は複数の実戦経験を持つが、その全てにおいて優秀な成績を収めてきた。                                
+                            </p>
+                            <a href="https://youtu.be/f5zVPX2mqyk" class="tile-btn">SEE MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-bottom">
+                <div class="content-bottom-menu">
+                    <div class="content-bottom-menu-img">
+                        <a href="./ground-lineup.html" id="lineup-1">
+                            <p>GROUND FORCE</p>
+                            <img src="./img/img4/scutum/img10.jpg">
+                        </a>
+                    </div>
+                    <div class="content-bottom-menu-img" id="lineup-2">
+                        <a href="./naval-lineup.html">
+                            <p>NAVAL FORCE</p>
+                            <img src="./img/img4/alvarodebazan/img5.jpg">
+                        </a>
+                    </div>
+                    <div class="content-bottom-menu-img" id="lineup-3">
+                        <a href="./air-lineup.html">
+                            <p>AIR FORCE</p>
+                            <img src="./img/img4/tonnerre/img3.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-menu">
+                <ul>
+                    <h3>最新情報</h3>
+                    <li><a href="https://www.microsoft.com/ja-jp/p/surface-laptop-go/94FC0BDGQ7WV">Surface Laptop Go</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/p/surface-pro-x/8QG3BMRHNWHK">Surface Pro X</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/p/surface-go-2/8PT3S2VJMDR6">Surface Go 2</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <h3>Microsoft Store</h3>
+                    <li><a href="https://account.microsoft.com/">アカウント プロファイル</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/download">Microsoft Store サポート</a></li>
+                    <li><a href="https://go.microsoft.com/fwlink/?linkid=2139749">返品・返金</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <h3>教育</h3>
+                    <li><a href="https://www.microsoft.com/ja-jp/education">教育機関向けの Microsoft 製品</a></li>
+                    <li><a href="https://www.microsoft.com/ja-jp/education/products/office/default.aspx">学生向け Office</a></li>
+                    <li><a href="https://products.office.com/ja-jp/academic/compare-office-365-education-plans">Office 365 の教育機関向け製品</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="https://support.microsoft.com/ja-jp/contactus"><p>Microsoft に問い合わせ</p></a>
+            <a href="https://go.microsoft.com/fwlink/?LinkId=521839"><p>プライバシー</p></a>
+            <a href="https://go.microsoft.com/fwlink/?LinkID=206977"><p>使用条件</p></a>
+        </div>
+    </footer>
+    <script>console.log("none");</script>
+</body>
+</html>
