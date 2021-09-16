@@ -1,0 +1,139 @@
+@media (max-width:670px){
+    .main-title {
+        padding-bottom:30px;
+        font-family:"century gothic";
+        font-size:39px;
+        font-weight:bold;
+        letter-spacing:1px;
+    }
+    
+    .sub-title {
+        padding-top:70px;
+        font-family:"yu gothic";
+        font-size:20px;
+        font-weight:500;
+        padding-bottom:10px;
+    }
+    
+    .top-img img {
+        display:flex;
+        width:100%;
+        height:300px;
+        object-fit:cover;
+        filter:brightness(70%);
+    }
+
+    .page-path {
+        display:flex;
+        align-items:center;
+        justify-content:flex-start;
+        margin-left:25px;
+    }
+
+    .page-path p {
+        margin:15px 5px;
+        font-family:"yu gothic";
+        font-weight:600;
+    }
+
+    .page-path1 {
+        text-decoration:underline;
+    }
+
+    .page-path2 {
+        color:#ff0000;
+    }
+
+    .page-comment {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:100%;
+        padding:0;
+        overflow-wrap:normal;
+    }
+
+    .page-comment-c {
+        margin:0 30px;
+    }
+
+    .page-comment-c p {
+        text-align:center;
+        word-wrap:normal;
+    }
+
+    .center-border {
+        margin:25px auto;
+        width:85%;
+    }
+
+    .lineup {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin:0 auto;
+        width:100%;
+    }
+
+    .lineup-list {
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .lineup-tile {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        width:74vw;
+        margin:10px 15px;
+    }
+
+    .lineup-tile a:hover {
+        filter:brightness(85%);
+    }
+
+    .lineup-tile a {
+        display:flex;
+        justify-content:center;
+        padding:12vw 0;
+        background-color:#ececec;
+        transition:0.5s;
+    }
+
+    .lineup-tile img {
+        width:74vw;
+        padding-top:56.25%;
+        padding:0;
+    }
+    
+    .lineup-tile-dummy {
+        width:74vw;
+        padding-top:56.25%;
+        padding:0;
+    }
+
+    .tile-p1 {
+        font-family:"yu gothic";
+        font-weight:600;
+        font-size:15px;
+        margin-top:5px;
+        margin-bottom:0;
+    }
+
+    .tile-p2 {
+        font-family:"yu gothic";
+        font-weight:400;
+        font-size:15px;
+        margin:0;
+    }
+
+    .bottom-border {
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:0;
+        margin-bottom:60px;
+        width:85%;
+    }
+}

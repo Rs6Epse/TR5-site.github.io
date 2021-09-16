@@ -1,0 +1,32 @@
+@media (max-width:670px) {
+    .footer-top {
+        padding-top:10px;
+        display:flex;
+        flex-flow:column;
+    }
+
+    .footer-menu {
+        padding:8px 0;
+    }
+
+    .footer-menu h3, .footer-menu a {
+        color:#595959;
+    }
+
+    .footer-bottom {
+        padding-left:12px;
+        padding-bottom:15px;
+        padding-top:20px;
+    }
+
+    .footer-bottom a {
+        float:left;
+        color:#595959;
+        padding:0 12px;
+    }
+
+    .footer-bottom p {
+        white-space:nowrap;
+        margin:0;
+    }
+}

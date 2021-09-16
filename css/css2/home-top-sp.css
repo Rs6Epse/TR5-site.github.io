@@ -1,0 +1,70 @@
+@media (max-width:670px) {
+    .top-video {
+        width:100%;
+        height:91vh;
+    }
+    
+    .top-video video {
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        filter:brightness(80%);
+    }
+    
+    .video-btn {
+        position:absolute;
+        top:90vh;
+    }
+    
+    .video-text {
+        position:absolute;
+        display:flex;
+        flex-flow:column;
+        align-items:center;
+        z-index:2;
+        padding-bottom:20px;
+    }
+
+    .video-text p {
+        white-space:nowrap;
+        margin:0;
+    }
+
+    .video-text1 {
+        font-family:"yu gothic";
+        font-size:4vw;
+        font-weight:500;
+        padding-bottom:10px;
+        color:#fff;
+    }
+
+    .video-text2 {
+        font-family:"century gothic";
+        font-size:12vw;
+        font-weight:bold;
+        letter-spacing:2px;
+        color:#fff;
+    }
+
+    .video-text a {
+        padding-top:40px;
+    }
+
+    .video-text3 {
+        padding:9px 10vw;
+        font-family:"yu gothic";
+        font-size:3vw;
+        font-weight:450;
+        background-color:#fff;
+        transition:0.5s;
+    }
+
+    .video-text3:hover {
+        background-color:#000;
+        color:#fff;
+    }
+
+    .video-btn p {
+        font-size:18px;
+    }
+}
